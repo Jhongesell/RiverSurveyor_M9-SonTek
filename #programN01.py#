@@ -1,0 +1,20 @@
+import pandas as pd
+import os
+tablaN01_df = pd.read_excel('files_resources/fileN01.xlsx', 'Hoja1')
+df = pd.DataFrame(tablaN01_df)
+a = type(tablaN01_df)
+b = type(df)
+print("Dataframe df")
+print(df.head())
+print("\n")
+print("La variable 'tablaN01_df' es de tipo"+str(a))
+print("La variable 'df' es de tipo"+str(b))
+if a == b:
+    print("'tablan01_DF' y 'df' son el mismo tipo de dato.")
+print("\n")
+print("Las dimensiones de la tabla son:")
+print("Total de filas: "+str(len(df.index)))
+print("Total de columnas: "+str(len(df.columns)))
+df.drop(['invoice'], axis=1)
+print("df removiendo la columna 'invoice'")
+print(df)

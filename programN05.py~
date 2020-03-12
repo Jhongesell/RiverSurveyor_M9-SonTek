@@ -1,0 +1,6 @@
+"""Fuente:
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop.html
+
+Objetivo de Jhon: Eliminar columnas de un dataframe en función a su posición"""
+import Pandas as pd
+#df = pd.DataFrame
