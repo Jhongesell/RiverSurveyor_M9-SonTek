@@ -22,10 +22,21 @@ df_N01 = df.drop(['Date/Time', 'Frequency (MHz)', 'Profile Type'], axis=1)
 print(df_N01.head())
 print("El tipo de datos de la variable es "+str(type(df_N01)))
 df_transposed = df_N01.T
+print("\n")
+print("df_transpuesta: ")
 print(df_transposed.head())
-df_N02 = df_transposed
+df_N02 = df_transposed.copy()
+print(df_N02.head())
+print("Seleccionamos parcialmente")
+seleccion01 = df_N02.iloc[0:16]
+print("El tipo de dato de 'seleccion01 es: "+str(type(seleccion01)))
+print(seleccion01)
+dataframemain = seleccion01.drop(seleccion01.index[[10, 14]])
+print(dataframemain)
+
+
 #purga1 = df_N02.drop(df_N02.index[[10, 14]])
-print(df_N02.drop(df_N02.index[[10, 14]]).head(16))
+#print(df_N02.drop(df_N02.index[[10, 14]]).head(16))
 #print("Purgamos primeras filas innecesarias, nos interesa tener los spd")
 #print(purga1[0:20])
 #print("Veamos las 5 primeras filas")

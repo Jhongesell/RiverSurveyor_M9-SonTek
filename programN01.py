@@ -7,8 +7,8 @@ b = type(df)
 print("Dataframe df")
 print(df.head())
 print("\n")
-print("La variable 'tablaN01_df' es de tipo"+str(a))
-print("La variable 'df' es de tipo"+str(b))
+print("La variable 'tablaN01_df' es de tipo: "+str(a))
+print("La variable 'df' es de tipo: "+str(b))
 if a == b:
     print("'tablan01_DF' y 'df' son el mismo tipo de dato.")
 print("\n")
@@ -31,3 +31,4 @@ print(b)
 #print(a)
 
 
+n

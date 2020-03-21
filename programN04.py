@@ -7,6 +7,7 @@ flights_long = sns.load_dataset("flights")
 flights = flights_long.pivot("month", "year", "passengers")
 
 # Draw a heatmap with the numeric values in each cell
-f, ax = plt.subplots(figsize=(9, 6))
-sns.heatmap(flights, annot=True, fmt="d", linewidths=.5, ax=ax)
+f, ax = plt.subplots(figsize=(10, 5))
+sns.heatmap(flights, annot=True, fmt="d", linewidths=5, ax=ax)
 plt.show()
+

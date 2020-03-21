@@ -1,0 +1,2 @@
+%matplotlib inline
+print("La ruta actual es: "+str(os.getcwd()))

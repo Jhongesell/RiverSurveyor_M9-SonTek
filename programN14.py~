@@ -1,0 +1,9 @@
+"""
+Convertir listas a un dataframe
+
+Fuente:
+https://thispointer.com/python-pandas-how-to-convert-lists-to-a-dataframe/
+"""
+# Lista de listas
+students = [['jack', 34, 'Sydeny'],
+            

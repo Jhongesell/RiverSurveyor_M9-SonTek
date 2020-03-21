@@ -1,0 +1,18 @@
+import os
+import pandas as pd
+from pandas import ExcelWriter
+import numpy as np
+tablaN01_df = pd.read_excel('/home/jhongesell/git_workspace/RiverSurveyor_M9-SonTek/files_resources/Example_N01_V02.xlsxExample_N01_V02.xlsx', '20190914090848')
+df = pd.DataFrame(tablaN01_df)
+a = type(tablaN01_df)
+b = type(df)
+print(df.head())
+print("\n")
+print("La variable 'tablaN01_df' es de tipo "+str(a))
+print("La variable 'df' es de tipo "+str(b))
+if a==b:
+    print("'tablaN01' y 'df' son el mismo tipo de dato.")
+print("\n")
+print("Las dimensiones de la tabla son: ")
+print("Total de filas: "+str(len(df.index)))
+print("Total de columnas: "+str(len(df.columns)))

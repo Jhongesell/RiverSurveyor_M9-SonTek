@@ -1,0 +1,10 @@
+"""
+Bucles anidados en Python
+
+Fuente:
+https://www.mclibre.org/consultar/python/lecciones/python-for-2.html
+
+"""
+
+for i in [0, 1, 2]:
+    print(f"i vale {i}")

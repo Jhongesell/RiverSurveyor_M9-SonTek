@@ -1,0 +1,8 @@
+"""Este es un programa que hace un recorrido a un index, utilizar 'range' o 'for'
+"""
+import numpas as np
+import pandas as pd
+
+x = range(6)
+for n in x:
+    print(n)

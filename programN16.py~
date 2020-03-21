@@ -1,0 +1,23 @@
+from mpl_toolkits.mplot3d import Axes3D
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+
+# Define number of generated data points and bins per axis.
+N_numbers = 100000
+N_bins = 20
+
+# set random seed
+np.random.seed(0)
+
+# Generate 2D normally distributed numbers.
+x, y = np.random.multivariate_normal(
+    mean = [0.0, 0.0], # mean
+    cov = [[1.0, 0.4],
+           [0.4, 0.25]], # convariance matrix
+    size = N_numbers
+    ).T # transpose to get columns
+print("La cantidad de elementos de x es: "+str(len(x)))
+print("La cantidad de elementos de y es: "+str(len(y)))
+
+
