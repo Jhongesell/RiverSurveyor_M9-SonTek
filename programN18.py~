@@ -1,0 +1,20 @@
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+
+# Definiendo numero de generadores de puntos de datos y contenedores por ejes
+N_numbers = 100000
+N_bins = 100
+
+# Conjunto aleatorio
+np.random.seed(0)
+
+# Generador normal 2D
+x, y = np.random.multivariate_normal(
+    mean=[0.0, 0.0],
+    cov =[[1.0, 0.4],
+          [0.4, 0.25]],
+    size = N_numbers
+    ).T
+print(x)
+print(y)

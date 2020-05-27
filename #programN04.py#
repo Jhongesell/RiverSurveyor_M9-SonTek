@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set()
+
+# Load the example flights dataset and convert to long-form
+flights_long = sns.load_dataset("flights")
+flights = flights_long.pivot("month", "year", "passengers")
+
+ ))
+sns.heatmap(flights, annot=True, fmt="d", linewidths=.2, ax=ax)
+plt.show()
+
